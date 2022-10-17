@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Do Switch on / off by clicking the button :</h2>
+    <button id="demo" onclick="clicked()">Switch off</button>
+
+    <script>
+    var flag =true;
+    function clicked() {
+        if(flag == true){
+          document.getElementById("demo").innerHTML = "Switch on";
+            flag=false;
+        }else if(flag == false ){
+          document.getElementById("demo").innerHTML = "Switch off";
+            flag =true;
+        }
+    }
+    </script>
+
+  </body>
+</html> 
